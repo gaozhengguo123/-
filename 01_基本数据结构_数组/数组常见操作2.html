@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    /* 
+    
+    */
+
+    /* 
+    更新的方法
+        push():数组最后面添加新的对象
+        pop():删除数组的最后一个元素
+        unshift():数组在最前面添加新的对象
+        shift()：数组删除第一个对象
+        sort():删除数组的第一个元素
+        reverse():对数组进行倒序排列
+        splice():数组里面添加一个对象
+    */
+    
+    const arr = [1, 2, 3, 4, 5, 6]
+
+    arr.push(1)
+    arr.push(7, 0)
+    arr.push([12, 32])
+    console.log(arr.pop())
+
+    arr.unshift(1)
+    arr.unshift(3, 4)
+    console.log(arr.shift())
+
+    arr.sort()
+    arr.sort((item1, item2) => item2 - item1)
+
+    arr.reverse()
+
+    arr.splice(2, 1)
+    arr.splice(2, 1, 4)
+    arr.splice(2, 0, 3)
+
+  </script>
+</body>
+</html>
